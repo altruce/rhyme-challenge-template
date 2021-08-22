@@ -9,7 +9,6 @@ public class Main {
             String completedRhymes = "";
             JSONReader jsonReader = new JSONReader();
             JSONObject rhymes = jsonReader.readFile("src/main/resources/rhymes.json");
-            System.out.print(rhymes);
 
             // TODO - complete rhymes
 
