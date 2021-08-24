@@ -9,6 +9,7 @@ public class Main {
             String completedRhymes = "";
             JSONReader jsonReader = new JSONReader();
             JSONObject rhymes = jsonReader.readFile("src/main/resources/rhymes.json");
+            String input = String.join(" ", args);
 
             // TODO - complete rhymes
 
@@ -17,7 +18,7 @@ public class Main {
             // even if you created a fancy export / illustration from the completed rhymes
             // we need this print to run the automated grading test
             System.out.print(completedRhymes);
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             System.exit(1);
         }
